@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             var retrofit = Retrofit.Builder()
                 .baseUrl("https://api.github.com/")
                 .build()
-            val service = retrofit.create(GitHubService::class.java)
 
+            val service = retrofit.create(GitHubService::class.java)
             val repos= service.listRepos("octocat")
 
             //GitHubService service = retrofit.create(GitHubService.class)
