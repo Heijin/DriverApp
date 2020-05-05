@@ -29,9 +29,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 .baseUrl("https://rawgit.com/startandroid/data/master/messages/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-
-
-
             //var messagesApi = retrofit.create<PrlgApiAuth>(PrlgApiAuth::class.java)
             //var messages = messagesApi.messages()
 
